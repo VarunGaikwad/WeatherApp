@@ -1,11 +1,57 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 .App div {
-    display: flex;
-    margin: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.App__TodaysTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.App__TodaysTemp__Number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App__TodaysTemp_Other {
+  display: flex;
+  flex-direction: column;
+}
+
+.App__TodaysTemp_Other > div {
+  display: flex;
+  justify-content: center;
+}
+
+.App__TodaysTemp__Number > p {
+  font-size: 48px;
+}
+
+.App__TodaysTemp__Number > span {
+  font-size: 24px;
+  opacity: 0.5;
 }
